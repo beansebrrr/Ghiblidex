@@ -27,26 +27,30 @@
 
         <!-- Navigation Bar -->
         <nav class="navbar navbar-dark navbar-expand-sm 
-        px-3 d-flex justify-content-between fixed-top">
+        px-3 fixed-top">
             <!-- Home Button -->
             <a href="index.html" class="navbar-brand">
-                <i class="bi bi-house-door-fill"></i>
-            </a>
+                <i class="bi bi-house-door-fill"></i> </a>
+            <!-- Navbar Collapse Button -->
+            <button class="navbar-toggler" data-bs-toggle="collapse"
+            data-bs-target="#movie-links"><span class="navbar-toggler-icon"></span></button>
             <!-- Movie Links -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="myneighbortotoro.html" class="nav-link active">
-                        My Neighbor Totoro</a>
-                </li>
-                <li class="nav-item">
-                    <a href="myneighbortotoro.html" class="nav-link">
-                        My Neighbor Totoro</a>
-                </li>
-                <li class="nav-item">
-                    <a href="myneighbortotoro.html" class="nav-link">
-                        My Neighbor Totoro</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="movie-links">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="myneighbortotoro.html" class="nav-link active">
+                            My Neighbor Totoro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="myneighbortotoro.html" class="nav-link">
+                            My Neighbor Totoro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="myneighbortotoro.html" class="nav-link">
+                            My Neighbor Totoro</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <!-- Movie Logo -->
