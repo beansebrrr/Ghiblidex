@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- I mean everyone else has it so... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ripped the favicon from ghibli.jp website heehee -->
+    <link rel="shortcut icon" href="https://www.ghibli.jp/favicon.ico">
+
+    <!-- Bootstrap woo. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>My Neighbor Totoro | Ghiblidex</title>
+</head>
+
+<!-- Set the id for each movie to swap through the assets -->
+<body id="totoro">
+    <!-- Hero Section -->
+    <div class="hero bg-transparent">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-dark navbar-expand-sm 
+        px-3 d-flex justify-content-between fixed-top">
+            <!-- Home Button -->
+            <a href="index.html" class="navbar-brand">
+                <i class="bi bi-house-door-fill"></i>
+            </a>
+            <!-- Movie Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="myneighbortotoro.html" class="nav-link active">
+                        My Neighbor Totoro</a>
+                </li>
+                <li class="nav-item">
+                    <a href="myneighbortotoro.html" class="nav-link">
+                        My Neighbor Totoro</a>
+                </li>
+                <li class="nav-item">
+                    <a href="myneighbortotoro.html" class="nav-link">
+                        My Neighbor Totoro</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Movie Logo -->
+        <img src="images/myneighbortotoro-logo.jpg" class="logo blur-animation" alt="My Neighbor Totoro">
+    </div>
+
+    <!-- Information Area -->
+    <div class="container-fluid p-4 info" id="totoro">
+        <div class="row">
+            <!-- I honestly still don't get how the
+            breakpoints work but yk what cool. -->
+            <div class="col-md-3 col-sm-5">
+                <img src="images/myneighbortotoro-poster.jpg" alt="My Neighbor Totoro Movie Poster"
+                class="poster">
+            </div>
+            <div class="col">
+                <!-- Movie Title & Synopsis -->
+                <h1>My Neighbor Totoro</h1>
+                <p class="subtitle">となりのトトロ • 1988</p>
+                <p>
+                    My Neighbor Totoro follows the story of Satsuki Kusakabe and her younger
+                    sister, Mei. They (along with their father) move into the rural side of
+                    Japan so they can live closer to their mother who is hospitalized. There,
+                    they meet magical spirits that reside within the forest. Follow their
+                    little adventures with their fluffy new friend, Totoro. 
+                </p>
+
+                <!-- External Links -->
+                <h2>Where to watch?</h2>
+                <div id="netflix" class=" watchlinks" role="button">
+                    <a href="https://www.netflix.com/title/60032294" class="btn btn-danger watchlink"
+                    target="_blank" rel="noopener noreferrer">
+                        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Netflix</title>
+                            <path d="M5.398 0v.006c3.028 8.556 5.37 15.175 8.348 23.596 2.344.058 4.85.398 4.854.398-2.8-7.924-5.923-16.747-8.487-24zm8.489 0v9.63L18.6 22.951c-.043-7.86-.004-15.913.002-22.95zM5.398 1.05V24c1.873-.225 2.81-.312 4.715-.398v-9.22z"></svg>
+                        Netflix
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Character Grid -->
+        <h2>Meet the Characters!</h2>
+        <div class="grid-container">
+            <div class=" character-card">
+                <img src="images/character-cards/satsuki-cc.png"
+                class="character-card" alt="">
+                <h5>Satsuki Kusakabe</h5>
+                <p class="subtitle">草壁 サツキ • Elder sister</p>
+            </div>
+            <div class="character-card">
+                <img src="images/character-cards/mei-cc.png"
+                class="character-card" alt="">
+                <h5>Mei Kusakabe</h5>
+                <p class="subtitle">草壁 メイ • Younger sister</p>
+            </div>
+            <div class="character-card">
+                <img src="images/character-cards/kanta-cc.png"
+                class="character-card" alt="">
+                <h5>Kanta Okagi</h5>
+                <p class="subtitle">大垣 寛太 • Neighbor</p>
+            </div>
+            <div class="character-card">
+                <img src="images/character-cards/totoro-cc.png"
+                class="character-card" alt="">
+                <h5>Totoro</h5>
+                <p class="subtitle">トトロ • Totoro</p>
+            </div>
+            <div class="character-card">
+                <img src="images/character-cards/yasuko-cc.png"
+                class="character-card" alt="">
+                <h5>Yasuko Kusakabe</h5>
+                <p class="subtitle">草壁靖子 • Mother</p>
+            </div>
+            <div class="character-card">
+                <img src="images/character-cards/tatsuo-cc.png"
+                class="character-card" alt="">
+                <h5>Tatsuo Kusakabe</h5>
+                <p class="subtitle">草壁 タツオ • Father</p>
+            </div>
+            <div class="character-card">
+                <img src="images/character-cards/granny-cc.png"
+                class="character-card" alt="">
+                <h5>Granny</h5>
+                <p class="subtitle">おばあちゃん • Neighbor granny</p>
+            </div>
+            <div class="character-card">
+                <img src="images/character-cards/catbus-cc.png"
+                class="character-card" alt="">
+                <h5>Catbus</h5>
+                <p class="subtitle">ネコバス • Catbus</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Made by Beansebrrr for CS50x.<br>
+        <a href="https://www.instagram.com/beansebrrr" class="icon">
+            <i class="bi bi-instagram"></i></a> &emsp;
+        <a href="https://www.github.com/beansebrrr" class="icon">
+            <i class="bi bi-github"></i></a> &emsp;
+        <a href="mailto:vmcaballero@proton.me" class="icon">
+            <i class="bi bi-envelope-fill"></i></a>
+        <br><span class="subtitle">2024</span>
+    </div>
+</body>
+</html>

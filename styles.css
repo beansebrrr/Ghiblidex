@@ -1,0 +1,156 @@
+/* oh boy. */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Nanum+Gothic+Coding&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* I like this font family */
+body  { font-family: 'Raleway'; color: white;} 
+h1 { font-family: 'Domine'; margin: 0; font-weight: 600;}
+h2 { font-family: 'Poppins'; font-size: x-large; margin-top: 2rem; font-weight: 400;}
+h5 { font-family: 'Poppins';}
+.subtitle { font-family: 'Nanum Gothic Coding'; font-size: 0.9rem; margin-bottom: 0.5rem;}
+body { background-color: black; }
+
+@keyframes blur-in {
+    0%, 25% {
+        transform: translateY(50%) scale(0.5);
+        filter: blur(30px);
+        opacity: 0%;
+    }
+
+    70% {
+        transform: translateY(-5%) scale(1.02);
+        filter: none;
+        opacity: 100%;
+    }
+}
+
+.blur-animation {
+    animation: blur-in 2s 0s;
+}
+
+/* Hero Section Styles */
+nav {
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 10%,
+    rgba(0,0,0,0) 100%);
+}
+
+.hero {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: clamp(10vw, 35vw, 40%);
+    position: absolute;
+    bottom: 10vh;
+    transition-duration: 1000ms;
+}
+.logo:hover {
+    transform: scale(1.1) translateY(-10px)
+}
+
+.logo#home {
+    width: clamp(20vw, 40vw, 60%);
+    position: absolute;
+    bottom: auto;
+    transition-duration: 1000ms;
+}
+
+
+/* About the movie */
+.info {
+    padding-inline: 3rem !important;
+    background-color: black;
+}
+
+.poster {
+    width: 100%;
+    border-radius: 6px;
+    transition-duration: 1000ms;
+    margin-bottom: 0.75rem;
+}
+.poster:hover {box-shadow: 0px 0px 30px 20px #a1d7b552; transform: scale(1.05) }
+
+.watchlink:hover {
+    box-shadow: inset 0px 0px 11px 10px rgba(0,0,0, 0.3);
+}
+.watchlink:active {
+    filter: brightness(0.7);
+    transform: translateY(2px);
+}
+
+#netflix .watchlink { background-color: #E50914; }
+
+.icon {
+    height: 1.5rem;
+    fill: white;
+    color: white;
+}
+
+/* Characters section */
+.grid-container {
+    display: grid;
+    justify-content: center;
+    gap: 0.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(25vh, 35vh));
+}
+
+.character-card {
+    background: white;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    padding: 0.25em 0.25em 0.50em 0.25em;
+    color: black;
+    transition-duration: 300ms;
+}
+.character-card:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0px 0px 10px 10px #00000080;
+    z-index: 1;
+}
+
+.character-card > img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.character-card > img:hover {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+.character-card > h5, .character-card > p {
+    margin-block: 0px;
+    color: black;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+/* Background Image Sources */
+#home > .hero {
+    background-color: rgb(255, 222, 121) !important;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.4) 100%);
+}
+/* Homepage Styles */
+#home.info {
+    background-color: white;
+    color: black;
+}
+
+#totoro > .hero {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
+    url(images/myneighbortotoro-bg.jpg);
+}
