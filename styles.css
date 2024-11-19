@@ -79,12 +79,13 @@ nav {
 }
 
 .logo {
-    width: clamp(10vw, 35vw, 40%);
+
+    width: clamp(20rem, 35rem, 70vw);
     position: absolute;
     bottom: 10vh;
     transition-duration: 1000ms;
 }
-.logo:hover { transform: scale(1.1) translateY(-10px) }
+.logo:hover { transform: scale(1.05) translateY(-8%) }
 /* ----------------------------------------------- */
 
 
@@ -180,13 +181,14 @@ img:hover {
     color: black;
 }
 
-.logo#home {
-    width: clamp(20vw, 40vw, 60%);
+#home.logo {
+    width: 65vw;
     position: absolute;
     bottom: auto;
     transition-duration: 1000ms;
 }
 /* ----------------------------------------------- */
+
 
 /* ------------- MY NEIGHBOR TOTORO -------------- */
 #totoro > .hero {
