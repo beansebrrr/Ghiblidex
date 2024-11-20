@@ -53,47 +53,70 @@
             </div>
         </nav>
 
+        <!-- Hero background customized at styles.css -->
+
         <!-- Movie Logo -->
         <img src="images/myneighbortotoro-logo.jpg" class="logo blur-animation" alt="My Neighbor Totoro">
     </div>
 
     <!-- Information Area -->
-    <div class="container-fluid p-4 info" id="totoro">
+    <div class="container info">
+
+        <!-- Movie Details -->
         <div class="row">
-            <!-- I honestly still don't get how the
-            breakpoints work but yk what cool. -->
-            <div class="col-md-3 col-sm-5">
-                <img src="images/myneighbortotoro-poster.jpg" alt="My Neighbor Totoro Movie Poster"
-                class="poster">
+            <div class="col-md-3">
+                <img src="images/myneighbortotoro-poster.jpg" alt="Poster" class="poster">
             </div>
-            <div class="col">
-                <!-- Movie Title & Synopsis -->
+            <div class="col-md-5">
                 <h1>My Neighbor Totoro</h1>
                 <p class="subtitle">となりのトトロ • 1988</p>
                 <p>
-                    My Neighbor Totoro follows the story of Satsuki Kusakabe and her younger
-                    sister, Mei. They (along with their father) move into the rural side of
-                    Japan so they can live closer to their mother who is hospitalized. There,
-                    they meet magical spirits that reside within the forest. Follow their
-                    little adventures with their fluffy new friend, Totoro. 
+                    My Neighbor Totoro follows the story of Satsuki Kusakabe
+                    and her younger sister, Mei. They (along with their father)
+                    move into the rural side of Japan so they can live closer
+                    to their mother who is hospitalized. There, they meet magical
+                    spirits that reside within the forest. Follow their little
+                    adventures with their fluffy new friend, Totoro. 
                 </p>
 
-                <!-- External Links -->
                 <h2>Where to watch?</h2>
-                <div class=" watchlinks" role="button">
-                    <a href="https://www.netflix.com/title/60032294" class="btn watchlink"
-                    id="netflix" target="_blank" rel="noopener noreferrer">
-                        <svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Netflix</title>
-                            <path d="M5.398 0v.006c3.028 8.556 5.37 15.175 8.348 23.596 2.344.058 4.85.398 4.854.398-2.8-7.924-5.923-16.747-8.487-24zm8.489 0v9.63L18.6 22.951c-.043-7.86-.004-15.913.002-22.95zM5.398 1.05V24c1.873-.225 2.81-.312 4.715-.398v-9.22z"></svg>
+                <div>
+                    <a href="https://www.netflix.com/title/60032294" target="_blank" rel="noopener noreferrer"
+                    class="watchlink btn" type="button" id="netflix">
+                        <span><svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Netflix</title><path d="M5.398 0v.006c3.028 8.556 5.37 15.175 8.348 23.596 2.344.058 4.85.398 4.854.398-2.8-7.924-5.923-16.747-8.487-24zm8.489 0v9.63L18.6 22.951c-.043-7.86-.004-15.913.002-22.95zM5.398 1.05V24c1.873-.225 2.81-.312 4.715-.398v-9.22z"/></svg></span>
                         Netflix
                     </a>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="card text-light bg-transparent border-light p-3">
+                    <h2 class="m-0 pb-3">Thoughts?</h2>
+                    <p>
+                        My Neighbor Totoro is a very fun watch. You'll realize
+                        instantly that you'll be in for a relaxing two hours,
+                        and I enjoyed every bit of it. There was no villain or
+                        huge conflict, just pure comfort and wondrous magic.
+                    </p>
+                    <p>
+                        I'd definitely watch it again if I need a movie to wind
+                        down.
+                    </p>
+                    <div class="star-rating">
+                        <span><i class="bi bi-star-fill"></i></span>
+                        <span><i class="bi bi-star-fill"></i></span>
+                        <span><i class="bi bi-star-fill"></i></span>
+                        <span><i class="bi bi-star-fill"></i></span>
+                        <span><i class="bi bi-star-half"></i></span><br>
+                        4.5 Stars
+                    </div>
+                </div>
+            </div>
         </div>
+
 
         <!-- Character Grid -->
         <h2>Meet the Characters!</h2>
-        <div class="grid-container">
+        <div class="character-grid">
             <div class=" character-card">
                 <img src="images/character-cards/satsuki-cc.png"
                 class="character-card" alt="">
