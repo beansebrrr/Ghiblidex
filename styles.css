@@ -76,7 +76,7 @@ nav {
 
 .hero {
     background-size: cover !important;
-    background-position: center !important;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
@@ -199,6 +199,6 @@ img:hover {
 /* ------------- MY NEIGHBOR TOTORO -------------- */
 #totoro > .hero {
     background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
-    url(images/myneighbortotoro-bg.jpg);
+    url(images/myneighbortotoro-bg.gif);
 }
 /* ----------------------------------------------- */
