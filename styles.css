@@ -76,7 +76,7 @@ nav {
 
 .hero {
     background-size: cover !important;
-    background-position: center;
+    background-position: center !important;
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
