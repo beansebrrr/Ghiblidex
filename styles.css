@@ -39,8 +39,7 @@ h5 { font-family: 'Poppins'; }
 }
 
 /* Now when you highlight text, it looks green */
-*::selection,
-*::-moz-selection { background: #93c176; }
+*::selection { background: #ffaa16; }
 /* ----------------------------------------------- */
 
 
@@ -102,10 +101,7 @@ nav {
     transition-duration: 1000ms;
     margin-bottom: 0.75rem;
 }
-.poster:hover { box-shadow: 0px 0px 30px 20px#a1d7b552;
-    transform: scale(1.05)
-}
-
+.poster:hover { transform: scale(1.05); }
 
 .watchlink { margin-block: 10px; }
 .watchlink:hover { box-shadow: inset 0px 0px 11px 10px rgba(0,0,0, 0.3); }
@@ -179,20 +175,29 @@ img:hover {
 /* Page-specific styling */
 /* ------------------ HOME PAGE ------------------ */
 #home > .hero {
-    background-color: rgb(212, 201, 179) !important;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 60%, rgba(0,0,0,0.4) 100%);
+    background-color: rgb(255, 222, 121) !important;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
+    url(images/home-bg.gif);
 }
 
 #home.info {
-    background-color: rgb(255, 222, 121);
-    color: black;
+    background-color: black;
+    color: white;
+    padding-block: 5vh;
 }
 
-#home.logo {
-    width: 65vw;
+#home > .hero > .logo {
+    width: 50vw;
     position: absolute;
-    bottom: auto;
     transition-duration: 1000ms;
+    fill: white;
+}
+
+.poster-sm {
+    width: 80%;
+    border-radius: 6px;
+    transition-duration: 1000ms;
+    margin-bottom: 0.75rem;
 }
 /* ----------------------------------------------- */
 
@@ -202,4 +207,15 @@ img:hover {
     background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
     url(images/myneighbortotoro-bg.gif);
 }
+
+#totoro.poster:hover { box-shadow: 0px 0px 30px 20px#54946c52; }
+/* ----------------------------------------------- */
+
+/* ------------ HOWL'S MOVING CASTLE ------------- */
+#howl > .hero {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
+    url(images/howlsmovingcastle-bg.gif);
+}
+
+#howl.poster:hover { box-shadow: 0px 0px 30px 20px#3e5ea252; }
 /* ----------------------------------------------- */

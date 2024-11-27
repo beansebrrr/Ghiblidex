@@ -21,9 +21,10 @@
 </head>
 
 <!-- Set the id for each movie to swap through the assets -->
+<!-- Set the id for each movie to swap through the assets -->
 <body id="home">
     <!-- Hero Section -->
-    <div class="hero bg-transparent" style="height: 90vh;">
+    <div class="hero bg-transparent">
 
         <!-- Navigation Bar -->
         <nav class="navbar navbar-dark navbar-expand-sm 
@@ -42,8 +43,8 @@
                             My Neighbor Totoro</a>
                     </li>
                     <li class="nav-item">
-                        <a href="myneighbortotoro.html" class="nav-link">
-                            My Neighbor Totoro</a>
+                        <a href="howlsmovingcastle.html" class="nav-link">
+                            Howl's Moving Castle</a>
                     </li>
                     <li class="nav-item">
                         <a href="myneighbortotoro.html" class="nav-link">
@@ -52,12 +53,16 @@
                 </ul>
             </div>
         </nav>
-        <img src="images/studioghibli-logo.svg" class="logo blur-animation bg-transparent" alt="Studio Ghibli"
-        id="home">
+
+        <!-- Hero background customized at styles.css -->
+
+        <!-- Movie Logo -->
+        <img src="images/studioghibli-logo.svg" class="logo blur-animation" alt="My Neighbor Totoro">
     </div>
+
     
      <!-- Information Area -->
-     <div class="container-fluid p-4 info" id="home">
+     <div class="container info" id="home">
         <h1>This is the Ghiblidex.</h1>
         <p>
             This place is a compilation of the Studio Ghibli movies I've
@@ -82,6 +87,24 @@
             Also, expanding this website will depend on if future
             beansebrrr is willing to do so.
         </p>
+        <br>
+        <h2>See what I watched.</h2>
+        <!-- Movie Details -->
+        <div class="row px-5">
+            <div class="col-md-4" style="text-align: center;">
+                <a href="myneighbortotoro.html">
+                    <img src="images/myneighbortotoro-poster.jpg" alt="My Neighbor Totoro" class="poster poster-sm" id="totoro">
+                </a>
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+                <a href="howlsmovingcastle.html">
+                    <img src="images/howlsmovingcastle-poster.jpg" alt="Howl's Moving Castle" class="poster poster-sm" id="howl">
+                </a>
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+                <img src="images/myneighbortotoro-poster.jpg" alt="" class="poster poster-sm" id="totoro">
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
