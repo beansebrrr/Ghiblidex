@@ -64,7 +64,7 @@ h5 { font-family: 'Poppins'; }
 
 /* ---------------- HERO SECTION ----------------- */
 nav {
-    background-image: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%);
 }
 .navbar-nav {
     margin-left: auto;
@@ -74,23 +74,20 @@ nav {
 }
 
 .hero {
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 .logo {
-
     width: clamp(20rem, 35rem, 70vw);
     position: absolute;
     bottom: 10vh;
     transition-duration: 1000ms;
 }
-.logo:hover { transform: scale(1.05) translateY(-8%) }
 /* ----------------------------------------------- */
 
 
@@ -163,7 +160,7 @@ img:hover {
     color: black;
 }
 
-.footer {
+footer {
     background-color: black;
     color: white;
     padding: 5rem 2rem 2rem 2rem;
@@ -175,8 +172,8 @@ img:hover {
 /* Page-specific styling */
 /* ------------------ HOME PAGE ------------------ */
 #home > .hero {
-    background-color: rgb(255, 222, 121) !important;
-    background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
+    background-color: rgb(255, 222, 121);
+    background: linear-gradient(rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
     url(images/home-bg.gif);
 }
 
@@ -204,7 +201,7 @@ img:hover {
 
 /* ------------- MY NEIGHBOR TOTORO -------------- */
 #totoro > .hero {
-    background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
+    background: linear-gradient(rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
     url(images/myneighbortotoro-bg.gif);
 }
 
@@ -213,9 +210,18 @@ img:hover {
 
 /* ------------ HOWL'S MOVING CASTLE ------------- */
 #howl > .hero {
-    background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
+    background: linear-gradient(rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
     url(images/howlsmovingcastle-bg.gif);
 }
 
 #howl.poster:hover { box-shadow: 0px 0px 30px 20px#3e5ea252; }
+/* ----------------------------------------------- */
+
+/* ---------- KIKI'S DELIVERY SERVICE ------------ */
+#kiki > .hero {
+    background: linear-gradient(rgba(0,0,0,0) 20%, rgba(0,0,0,1) 100%),
+    url(images/kikisdeliveryservice-bg.gif);
+}
+
+#kiki.poster:hover { box-shadow: 0px 0px 30px 20px#a23e3e52; }
 /* ----------------------------------------------- */
