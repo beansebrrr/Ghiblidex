@@ -14,6 +14,7 @@
     
     <!-- Local Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -23,7 +24,7 @@
 <!-- Set the id for each movie to swap through the assets -->
 <body id="totoro">
     <!-- Hero Section -->
-    <section class="hero">
+    <div class="hero">
 
         <!-- Navigation Bar -->
         <nav class="navbar navbar-dark navbar-expand-sm 
@@ -56,8 +57,12 @@
         <!-- Hero background customized at styles.css -->
 
         <!-- Movie Logo -->
-        <img src="images/myneighbortotoro-logo.jpg" class="logo blur-animation" alt="My Neighbor Totoro">
-    </section>
+        <img src="images/myneighbortotoro-logo.jpg" class="logo blur-animation"
+        onclick="togglePlay()"
+        alt="My Neighbor Totoro">
+
+        <audio autoplay loop src="audio/myneighbortotoro-bgm.mp3" id="bg-music"></audio>
+    </div>
 
     <!-- Information Area -->
     <section class="info container">
@@ -65,7 +70,7 @@
         <!-- Movie Details -->
         <div class="row">
             <div class="col-md-3">
-                <img src="images/myneighbortotoro-poster.jpg" alt="Poster" class="poster" id="totoro">
+                <img src="images/myneighbortotoro-poster.jpg" alt="Poster" class="poster">
             </div>
             <div class="col-md-5">
                 <h1>My Neighbor Totoro</h1>
@@ -82,7 +87,7 @@
                 <h2>Where to watch?</h2>
                 <div>
                     <a href="https://www.netflix.com/title/60032294" target="_blank" rel="noopener noreferrer"
-                    class="watchlink btn" type="button" id="netflix">
+                    class="watchlink btn" id="netflix">
                         <span><svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Netflix</title><path d="M5.398 0v.006c3.028 8.556 5.37 15.175 8.348 23.596 2.344.058 4.85.398 4.854.398-2.8-7.924-5.923-16.747-8.487-24zm8.489 0v9.63L18.6 22.951c-.043-7.86-.004-15.913.002-22.95zM5.398 1.05V24c1.873-.225 2.81-.312 4.715-.398v-9.22z"/></svg></span>
                         Netflix
                     </a>
@@ -113,7 +118,6 @@
             </div>
         </div>
 
-
         <!-- Character Grid -->
         <h2>Meet the Characters!</h2>
         <div class="character-grid">
@@ -121,49 +125,49 @@
                 <img src="images/character-cards/satsuki-cc.png"
                 class="character-card" alt="">
                 <h5>Satsuki Kusakabe</h5>
-                <p class="subtitle">草壁 サツキ • Elder sister</p>
+                <p class="subtitle">草壁 サツキ</p>
             </div>
             <div class="character-card">
                 <img src="images/character-cards/mei-cc.png"
                 class="character-card" alt="">
                 <h5>Mei Kusakabe</h5>
-                <p class="subtitle">草壁 メイ • Younger sister</p>
+                <p class="subtitle">草壁 メイ</p>
             </div>
             <div class="character-card">
                 <img src="images/character-cards/kanta-cc.png"
                 class="character-card" alt="">
                 <h5>Kanta Okagi</h5>
-                <p class="subtitle">大垣 寛太 • Neighbor</p>
+                <p class="subtitle">大垣 寛太</p>
             </div>
             <div class="character-card">
                 <img src="images/character-cards/totoro-cc.png"
                 class="character-card" alt="">
                 <h5>Totoro</h5>
-                <p class="subtitle">トトロ • Totoro</p>
+                <p class="subtitle">トトロ</p>
             </div>
             <div class="character-card">
                 <img src="images/character-cards/yasuko-cc.png"
                 class="character-card" alt="">
                 <h5>Yasuko Kusakabe</h5>
-                <p class="subtitle">草壁靖子 • Mother</p>
+                <p class="subtitle">草壁靖子</p>
             </div>
             <div class="character-card">
                 <img src="images/character-cards/tatsuo-cc.png"
                 class="character-card" alt="">
                 <h5>Tatsuo Kusakabe</h5>
-                <p class="subtitle">草壁 タツオ • Father</p>
+                <p class="subtitle">草壁 タツオ</p>
             </div>
             <div class="character-card">
                 <img src="images/character-cards/granny-cc.png"
                 class="character-card" alt="">
                 <h5>Granny</h5>
-                <p class="subtitle">おばあちゃん • Neighbor granny</p>
+                <p class="subtitle">おばあちゃん</p>
             </div>
             <div class="character-card">
                 <img src="images/character-cards/catbus-cc.png"
                 class="character-card" alt="">
                 <h5>Catbus</h5>
-                <p class="subtitle">ネコバス • Catbus</p>
+                <p class="subtitle">ネコバス</p>
             </div>
         </div>
     </section>

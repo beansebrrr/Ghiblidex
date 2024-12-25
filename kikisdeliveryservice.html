@@ -14,6 +14,7 @@
     
     <!-- Local Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -23,7 +24,7 @@
 <!-- Set the id for each movie to swap through the assets -->
 <body id="kiki">
     <!-- Hero Section -->
-    <section class="hero">
+    <div class="hero">
 
         <!-- Navigation Bar -->
         <nav class="navbar navbar-dark navbar-expand-sm 
@@ -56,8 +57,12 @@
         <!-- Hero background customized at styles.css -->
 
         <!-- Movie Logo -->
-        <img src="images/kikisdeliveryservice-logo.png" class="logo blur-animation" alt="Studio Ghibli">
-    </section>
+        <img src="images/kikisdeliveryservice-logo.png" class="logo blur-animation"
+        onclick="togglePlay()"
+        alt="Kiki's Delivery Service">
+
+        <audio autoplay loop src="audio/kikisdeliveryservice-bgm.mp3" id="bg-music"></audio>
+    </div>
 
     <!-- Information Area -->
     <section class="container info">
@@ -65,7 +70,7 @@
         <!-- Movie Details -->
         <div class="row">
             <div class="col-md-3">
-                <img src="images/kikisdeliveryservice-poster.jpg" alt="Poster" class="poster" id="kiki">
+                <img src="images/kikisdeliveryservice-poster.jpg" alt="Poster" class="poster">
             </div>
             <div class="col-md-5">
                 <h1>Kiki's Delivery Service</h1>
@@ -81,7 +86,7 @@
                 <h2>Where to watch?</h2>
                 <div>
                     <a href="https://www.netflix.com/title/60027106" target="_blank" rel="noopener noreferrer"
-                    class="watchlink btn" type="button" id="netflix">
+                    class="watchlink btn" id="netflix">
                         <span><svg class="icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Netflix</title><path d="M5.398 0v.006c3.028 8.556 5.37 15.175 8.348 23.596 2.344.058 4.85.398 4.854.398-2.8-7.924-5.923-16.747-8.487-24zm8.489 0v9.63L18.6 22.951c-.043-7.86-.004-15.913.002-22.95zM5.398 1.05V24c1.873-.225 2.81-.312 4.715-.398v-9.22z"/></svg></span>
                         Netflix
                     </a>
